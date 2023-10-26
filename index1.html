@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <form action="" id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="age">Age</label>
+        <input type="number" id="age" required>
+        <input type="hidden" id="edit-id">
+        <button type="submit">Create</button>
+    </form>
+    <form action="" id="updateForm">
+        <label for="name">Name</label>
+        <input type="text" id="updateName" required>
+        <label for="age">Age</label>
+        <input type="number" id="updateAge" required>
+        <button type="submit">Update</button>
+        <a onclick="CloseInput()" id="close">&#10006;</a>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
